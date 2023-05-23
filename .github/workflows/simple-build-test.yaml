@@ -38,7 +38,7 @@ concurrency:
 jobs:
   jvm-build-test:
     runs-on: ubuntu-latest
-    if: github.repository == 'rafaeltuelho/devspaces-quarkus-crud-demo'
+    if: github.repository == 'raphaelmorsch/devspaces-quarkus-crud-demo'
     strategy:
       fail-fast: false
       matrix:
