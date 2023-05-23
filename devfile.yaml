@@ -5,7 +5,7 @@ metadata:
 #   - name: devspaces-quarkus-crud-demo
 #     git:
 #       remotes:
-#         origin: "https://github.com/rafaeltuelho/devspaces-quarkus-crud-demo"
+#         origin: "https://github.com/raphaelmorsch/devspaces-quarkus-crud-demo"
 #       checkoutFrom:
 #         revision: main
 components:
