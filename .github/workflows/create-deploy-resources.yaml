@@ -16,6 +16,8 @@ on:
         type: string
   workflow_dispatch:
 
+permissions: read-all|write-all
+
 jobs:
   create-deploy-resources:
     if: ((github.event_name == 'workflow_dispatch') || ((github.event_name == 'workflow_run') && ((github.event.workflow_run.event == 'push') || (github.event.workflow_run.event == 'workflow_dispatch')) && (github.event.workflow_run.conclusion == 'success'))) && ((github.repository == 'raphaelmorsch/devspaces-quarkus-crud-demo') && ((inputs.branch == 'main') || (inputs.branch == 'rhbq-2.7')))
