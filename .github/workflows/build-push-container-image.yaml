@@ -16,6 +16,8 @@ on:
       - completed
   workflow_dispatch:
 
+permissions: write-all
+
 concurrency:
   group: "workflow = ${{ github.workflow }}, ref = ${{ github.event.workflow_run.head_branch || github.event.ref || github.ref }}"
   cancel-in-progress: false
