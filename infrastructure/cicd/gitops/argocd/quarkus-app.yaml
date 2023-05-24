@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/rafaeltuelho/devspaces-quarkus-crud-demo.git
+    repoURL: https://github.com/raphaelmorsch/devspaces-quarkus-crud-demo.git
     path: deploy/k8s
     directory:
       include: '*'

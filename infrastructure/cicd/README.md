@@ -4,7 +4,7 @@
 
 ```
 oc new-project quarkus-cicd-demo
-oc adm policy add-role-to-user admin rafaeltuelho -n quarkus-cicd-demo
+oc adm policy add-role-to-user admin ramoreir -n quarkus-cicd-demo
 oc adm policy add-role-to-user edit rsoares-rh -n quarkus-cicd-demo
 
 oc create -f ./infrastructure/cicd/tekton/setup/quay.io-github-basicauth-secret.yaml

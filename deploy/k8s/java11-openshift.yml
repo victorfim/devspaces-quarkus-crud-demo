@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-url: https://github.com/rafaeltuelho/devspaces-quarkus-crud-demo
+    app.openshift.io/vcs-url: https://github.com/raphaelmorsch/devspaces-quarkus-crud-demo
     app.openshift.io/vcs-ref: main
     app.quarkus.io/build-timestamp: 2023-04-06 - 19:52:41 +0000
   labels:
@@ -25,7 +25,7 @@ apiVersion: image.openshift.io/v1
 kind: ImageStream
 metadata:
   annotations:
-    app.openshift.io/vcs-url: https://github.com/rafaeltuelho/devspaces-quarkus-crud-demo
+    app.openshift.io/vcs-url: https://github.com/raphaelmorsch/devspaces-quarkus-crud-demo
     app.openshift.io/vcs-ref: main
     app.quarkus.io/build-timestamp: 2023-04-06 - 19:52:41 +0000
   labels:
@@ -39,7 +39,7 @@ spec:
   tags:
     - from:
         kind: DockerImage
-        name: quay.io/rafaeltuelho/devspaces-quarkus-crud-demo:java11-latest
+        name: quay.io/ramoreir/devspaces-quarkus-crud-demo:java11-latest
       importPolicy: {}
       name: java11-latest
       referencePolicy:
@@ -49,7 +49,7 @@ apiVersion: apps.openshift.io/v1
 kind: DeploymentConfig
 metadata:
   annotations:
-    app.openshift.io/vcs-url: https://github.com/rafaeltuelho/devspaces-quarkus-crud-demo
+    app.openshift.io/vcs-url: https://github.com/raphaelmorsch/devspaces-quarkus-crud-demo
     app.openshift.io/vcs-ref: main
     app.quarkus.io/build-timestamp: 2023-04-06 - 19:52:41 +0000
   labels:
@@ -65,7 +65,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-url: https://github.com/rafaeltuelho/devspaces-quarkus-crud-demo
+        app.openshift.io/vcs-url: https://github.com/raphaelmorsch/devspaces-quarkus-crud-demo
         app.openshift.io/vcs-ref: main
         app.quarkus.io/build-timestamp: 2023-04-06 - 19:52:41 +0000
       labels:
@@ -79,7 +79,7 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.namespace
-          image: quay.io/rafaeltuelho/devspaces-quarkus-crud-demo:java11-latest-amd64
+          image: quay.io/ramoreir/devspaces-quarkus-crud-demo:java11-latest-amd64
           imagePullPolicy: Always
           livenessProbe:
             failureThreshold: 3
@@ -116,7 +116,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-url: https://github.com/rafaeltuelho/devspaces-quarkus-crud-demo
+    app.openshift.io/vcs-url: https://github.com/raphaelmorsch/devspaces-quarkus-crud-demo
     app.openshift.io/vcs-ref: main
     app.quarkus.io/build-timestamp: 2023-04-06 - 19:52:41 +0000
   labels:

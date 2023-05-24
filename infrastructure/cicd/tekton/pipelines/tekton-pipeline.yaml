@@ -4,7 +4,7 @@ metadata:
   name: gitops-dev-pipeline
 spec:
   params:
-    - default: 'https://github.com/rafaeltuelho/devspaces-quarkus-crud-demo.git'
+    - default: 'https://github.com/raphaelmorsch/devspaces-quarkus-crud-demo.git'
       description: Source to the GIT
       name: git-url
       type: string
@@ -15,7 +15,7 @@ spec:
     - name: config-git-url
       type: string
       description: URL of the Git config repository
-      default: 'https://github.com/rafaeltuelho/devspaces-quarkus-crud-demo-manifests.git'
+      default: 'https://github.com/raphaelmorsch/devspaces-quarkus-crud-demo-manifests.git'
     - name: config-dir
       type: string
       description: Configuration directory within the config-git-url with the files
@@ -27,7 +27,7 @@ spec:
     - name: image-name
       type: string
       description: the name of the target image including registry
-      default: quay.io/rafaeltuelho/devspaces-quarkus-crud-demo
+      default: quay.io/ramoreir/devspaces-quarkus-crud-demo
     # no need to pass registry creds using params if you have a proper SA and dockerconfig Secret 
     #  setup to be used in your PipelineRuns (serviceAccount)
     # - name: image-username
