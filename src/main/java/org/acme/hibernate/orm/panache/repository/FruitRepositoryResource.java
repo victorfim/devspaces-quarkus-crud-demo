@@ -57,7 +57,7 @@ public class FruitRepositoryResource {
             throw new WebApplicationException("Id was invalidly set on request.", 422);
         }
 
-        fruit.name = fruit.name.toUpperCase();
+        /*comment for test */
         fruitRepository.persist(fruit);
         return Response.ok(fruit).status(201).build();
     }
