@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: victorfim
+  name: devspaces-quarkus-crud-demo
   annotations:
-    github.com/project-slug: valedevopsbackstage/initialcatalog
+    github.com/project-slug: victorfim/devspaces-quarkus-crud-demo
 spec:
   type: other
-  lifecycle: experimental
+  lifecycle: unknown
