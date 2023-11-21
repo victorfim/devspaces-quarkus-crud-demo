@@ -1,17 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: camel3-valenet
-  description: |
-    Teste do Fim
-  links:
-    - title: Website
-      url: https://vale-devops.visualstudio.com/Enterprise%20Integration%20-%20Fuse/_git/camel3-valenet
+  name: victorfim
   annotations:
-    github.com/project-slug: backstage/backstage
-    backstage.io/techdocs-ref: dir:.
-    lighthouse.com/website-url: https://vale-devops.visualstudio.com/Enterprise%20Integration%20-%20Fuse/_git/camel3-valenet
+    github.com/project-slug: valedevopsbackstage/initialcatalog
 spec:
-  type: service
-  owner: Victor Fim
-  lifecycle: production
+  type: other
+  lifecycle: experimental
